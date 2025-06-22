@@ -28,11 +28,17 @@ p {
  }
 
  img {
-     display: block;
+    display: block;
  }
 
  .header  {
-     border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+   
+ }
+
+ .header .container {
+     
+    display: flex;
  }
 
  .header-nav {
@@ -161,7 +167,7 @@ p {
     padding: 120px 0;
 }
 
-/*.visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -172,7 +178,7 @@ p {
     clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
-}*/
+}
 
 .peculiarities-list-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
@@ -222,23 +228,39 @@ p {
     color: #2e2f42;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .section-team-list {
 
     background-color: #ffffff;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    display: flex;
     border-radius: 0px 0px 4px 4px;
+    gap: 24px;
 
 }
 
-.section-team-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section-team-list:first-child {
+
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
     gap: 24px;
+
+}
+
+.section-team-person {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    padding: 32px 0;
+   
+}
+
+.section-team-list-item {
+   
    /* border-radius: 0 0 4px 4px;*/
-    padding: 0px 0px 32px 0px;
+   /* padding: 0px 0px 32px 0px;*/
 }
 
 
@@ -251,6 +273,8 @@ p {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 72px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .section-team-text {
@@ -261,6 +285,8 @@ p {
     letter-spacing: 0.02em;
     color: #434455;
     padding: 32px 0;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 /*<!--end of 3 section-team-->*/
@@ -297,7 +323,7 @@ p {
     width: calc((100% - 48px) / 3);
 }
 
-.section-portfolio-list-item:not(:first-child) {
+.section-portfolio-list-item {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -309,6 +335,13 @@ p {
     padding: 32px 16px;
 }
 
+.portfolio-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
+}
+
 .section-portfolio-title {
 
     font-weight: 500;
@@ -316,7 +349,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
 }
 
 .section-portfolio-text {
