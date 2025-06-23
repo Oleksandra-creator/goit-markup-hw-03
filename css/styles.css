@@ -217,6 +217,7 @@ p {
     background-color: #F4F4FD;
     padding: 120px 0;
     display: flex;
+  
 }
 
 .section-team-main-title {
@@ -235,7 +236,7 @@ p {
 
     background-color: #ffffff;
     display: flex;
-    border-radius: 0px 0px 4px 4px;
+    /*border-radius: 0px 0px 4px 4px;*/
     gap: 24px;
 
 }
@@ -244,23 +245,26 @@ p {
 
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+   
   
 }
 
 .section-team-person {
     display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
     padding: 32px 0;
+   
    
 }
 
 /*.section-team-list-item {
-   
-   /* border-radius: 0 0 4px 4px;*/
-   /* padding: 0px 0px 32px 0px;*/
 
+    flex-wrap: wrap;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+}*/
 
 .section-team-title {
 
@@ -285,6 +289,7 @@ p {
     padding: 32px 0;
     text-align: center;
     margin-bottom: 8px;
+
 }
 
 /*<!--end of 3 section-team-->*/
